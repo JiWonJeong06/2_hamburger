@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b9ad01f84c4ec2d4792f8efba4171463
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 316752
+  packageName: "Pixel Nature Pack \u2013 House, Trees, Bushes & Universal Tilemap"
+  packageVersion: 1.0
+  assetPath: Assets/Settings/PixelNature_URP.asset
+  uploadId: 749215
