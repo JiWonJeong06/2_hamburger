@@ -1,0 +1,74 @@
+[
+  {
+    "ID": 1,
+    "ID_CODENAME": "Cheese_Burger",
+    "CODENAME": "치즈버거",
+    "RangeType": "Melee",
+    "HP": 100,
+    "ATK": 20,
+    "DEF": 12,
+    "SPD": 5,
+    "ASPD": 1.0,
+    "AI타겟코드": 1
+  },
+  {
+    "ID": 2,
+    "ID_CODENAME": "Shrimp_Burger",
+    "CODENAME": "새우버거",
+    "RangeType": "Ranged",
+    "HP": 85,
+    "ATK": 35,
+    "DEF": 8,
+    "SPD": 6,
+    "ASPD": 1.2,
+    "AI타겟코드": 2
+  },
+  {
+    "ID": 3,
+    "ID_CODENAME": "Almond_Burger",
+    "CODENAME": "아몬드버거",
+    "RangeType": "Melee",
+    "HP": 200,
+    "ATK": 15,
+    "DEF": 25,
+    "SPD": 4,
+    "ASPD": 0.8,
+    "AI타겟코드": 3
+  },
+  {
+    "ID": 4,
+    "ID_CODENAME": "Burger_Queen",
+    "CODENAME": "버거퀸와사비",
+    "RangeType": "Ranged",
+    "HP": 95,
+    "ATK": 18,
+    "DEF": 10,
+    "SPD": 5,
+    "ASPD": 1.0,
+    "AI타겟코드": 4
+  },
+  {
+    "ID": 5,
+    "ID_CODENAME": "Avocado_Burger",
+    "CODENAME": "아보카도버거",
+    "RangeType": "Ranged",
+    "HP": 105,
+    "ATK": 10,
+    "DEF": 14,
+    "SPD": 5,
+    "ASPD": 1.0,
+    "AI타겟코드": 5
+  },
+  {
+    "ID": 6,
+    "ID_CODENAME": "Galaxy_Burger",
+    "CODENAME": "갤럭시버거 (스페셜)",
+    "RangeType": "Ranged",
+    "HP": 150,
+    "ATK": 40,
+    "DEF": 22,
+    "SPD": 6,
+    "ASPD": 1.2,
+    "AI타겟코드": 6
+  }
+]
