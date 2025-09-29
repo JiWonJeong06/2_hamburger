@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class SettingsManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+     private static SettingsManager instance = null;
+    public static SettingsManager Instance
     {
-        
+        get
+        {
+            if (instance == null)
+            {
+                return null;
+            }
+            return instance;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
-    }
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }  
 }

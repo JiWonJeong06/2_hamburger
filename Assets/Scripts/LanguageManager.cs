@@ -2,15 +2,28 @@ using UnityEngine;
 
 public class LanguageManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+     private static LanguageManager instance = null;
+    public static LanguageManager Instance
     {
-        
+        get
+        {
+            if (instance == null)
+            {
+                return null;
+            }
+            return instance;
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

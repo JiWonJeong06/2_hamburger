@@ -3,6 +3,31 @@ using System.Collections;
 
 public class CharactorManager : MonoBehaviour
 {
+    private static CharactorManager instance = null;
+    public static CharactorManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                return null;
+            }
+            return instance;
+        }
+    }
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     [Header("캐릭터 수치")]
     public string unitName;
     public int damage;           // 공격력
