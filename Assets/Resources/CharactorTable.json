@@ -1,0 +1,71 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "en_name": "Cheese_Burger",
+      "name": "치즈버거",
+      "range": 0,
+      "hp": 100,
+      "attack": 20,
+      "defense": 12,
+      "speed": 5,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 2,
+      "en_name": "Shrimp_Burger",
+      "name": "새우버거",
+      "range": 1,
+      "hp": 85,
+      "attack": 35,
+      "defense": 8,
+      "speed": 6,
+      "attackspeed": 1.2
+    },
+    {
+      "id": 3,
+      "en_name": "Almond_Burger",
+      "name": "아몬드버거",
+      "range": 0,
+      "hp": 200,
+      "attack": 15,
+      "defense": 25,
+      "speed": 4,
+      "attackspeed": 0.8
+    },
+    {
+      "id": 4,
+      "en_name": "Burger_Queen",
+      "name": "버거퀸와사비",
+      "range": 1,
+      "hp": 95,
+      "attack": 18,
+      "defense": 10,
+      "speed": 5,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 5,
+      "en_name": "Avocado_Burger",
+      "name": "아보카도버거",
+      "range": 1,
+      "hp": 105,
+      "attack": 10,
+      "defense": 14,
+      "speed": 5,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 6,
+      "en_name": "Galaxy_Burger",
+      "name": "갤럭시버거",
+      "range": 1,
+      "hp": 150,
+      "attack": 40,
+      "defense": 22,
+      "speed": 6,
+      "attackspeed": 1.2
+    }
+  ]
+}
+
