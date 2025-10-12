@@ -1,0 +1,138 @@
+{
+  "monster": [
+    {
+      "id": 2001,
+      "en_name": "Shrimpling",
+      "name": "쉬림프링",
+      "range": 0,
+      "hp": 120,
+      "attack": 12,
+      "defense": 5,
+      "speed": 1.0,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 2002,
+      "en_name": "Shell Soldier",
+      "name": "쉘솔져",
+      "range": 0,
+      "hp": 180,
+      "attack": 15,
+      "defense": 10,
+      "speed": 1.0,
+      "attackspeed": 0.9
+      
+    },
+    {
+      "id": 2003,
+      "en_name": "Claw Hunter",
+      "name": "크라우헌터",
+      "range": 0,
+      "hp": 150,
+      "attack": 20,
+      "defense": 8,
+      "speed": 1.1,
+      "attackspeed": 1.1
+    },
+    {
+      "id": 2004,
+      "en_name": "Almondling",
+      "name": "아몬드링",
+      "range": 0,
+      "hp": 150,
+      "attack": 10,
+      "defense": 12,
+      "speed": 0.9,
+      "attackspeed": 0.8
+    },
+    {
+      "id": 2005,
+      "en_name": "Nut_Crusher",
+      "name": "넛크러셔",
+      "range": 0,
+      "hp": 220,
+      "attack": 18,
+      "defense": 15,
+      "speed": 0.8,
+      "attackspeed": 0.9
+    },
+    {
+      "id": 2006,
+      "en_name": "Shell_Defender",
+      "name": "쉘디펜더",
+      "range": 0,
+      "hp": 250,
+      "attack": 12,
+      "defense": 20,
+      "speed": 0.8,
+      "attackspeed": 0.7
+    },
+    {
+      "id": 2007,
+      "en_name": "Wasabi_Slime",
+      "name": "와사비슬라임",
+      "range": 0,
+      "hp": 130,
+      "attack": 14,
+      "defense": 6,
+      "speed": 1.0,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 2008,
+      "en_name": "Spicy_Mist",
+      "name": "스파이시미스트",
+      "range": 1,
+      "hp": 160,
+      "attack": 17,
+      "defense": 8,
+      "speed": 1.0,
+      "attackspeed": 1.0
+    },
+    {
+      "id": 2009,
+      "en_name": "Hot_Root",
+      "name": "핫루트",
+      "range": 0,
+      "hp": 200,
+      "attack": 22,
+      "defense": 12,
+      "speed": 0.9,
+      "attackspeed": 0.9
+    },
+    {
+      "id": 2010,
+      "en_name": "Seedling",
+      "name": "시드링",
+      "range": 0,
+      "hp": 140,
+      "attack": 12,
+      "defense": 10,
+      "speed": 1.0,
+      "attackspeed": 0.9
+    },
+    {
+      "id": 2011,
+      "en_name": "Vine_Beast",
+      "name": "바인비스트",
+      "range": 0,
+      "hp": 220,
+      "attack": 16,
+      "defense": 14,
+      "speed": 0.9,
+      "attackspeed": 0.9
+    },
+    {
+      "id": 2012,
+      "en_name": "Stone_Core",
+      "name": "스톤코어",
+      "range": 0,
+      "hp": 280,
+      "attack": 18,
+      "defense": 18,
+      "speed": 0.8,
+      "attackspeed": 0.8
+    }
+  ]
+}
+

@@ -1,0 +1,54 @@
+{
+  "boss": [
+    {
+      "id": 3001,
+      "en_name": "Shrimp_Boss",
+      "name": "새우보스",
+      "range": 0,
+      "hp": 1200,
+      "attack": 45,
+      "defense": 20,
+      "speed": 0.9,
+      "attackspeed": 1.0,
+      "dropitem" : "Shrimp"
+    },
+    {
+      "id": 3002,
+      "en_name": "Almond_Boss",
+      "name": "아몬드보스",
+      "range": 0,
+      "hp": 1600,
+      "attack": 40,
+      "defense": 35,
+      "speed": 0.8,
+      "attackspeed": 0.8,
+      "dropitem" : "Almond"
+      
+    },
+    {
+      "id": 3003,
+      "en_name": "Wasabi_Boss",
+      "name": "와사비보스",
+      "range": 1,
+      "hp": 1500,
+      "attack": 55,
+      "defense": 25,
+      "speed": 1.0,
+      "attackspeed": 1.0,
+      "dropitem" : "Wasabi"
+    },
+    {
+      "id": 3004,
+      "en_name": "Avocado_Boss",
+      "name": "아보카도보스",
+      "range": 0,
+      "hp": 2000,
+      "attack": 50,
+      "defense": 40,
+      "speed": 0.9,
+      "attackspeed": 0.9,
+      "dropitem" : "Avocado"
+    }
+  ]
+}
+

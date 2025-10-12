@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Data
+public class MonsterData
 {
     public int id; //아이디
     public string en_name; //영어 이름
@@ -15,15 +15,14 @@ public class Data
 }
 
 [System.Serializable]
-public class CharacterDataWrapper
+public class MonsterDataWrapper
 {
-    public Data[] characters;
+    public MonsterData[] monster;
 }
-public class CharJson : MonoBehaviour
-{
-
-    private static CharJson instance = null;
-    public static CharJson Instance
+public class MonsterJson : MonoBehaviour
+{   
+    private static MonsterJson instance = null;
+    public static MonsterJson Instance
     {
         get
         {
@@ -36,7 +35,7 @@ public class CharJson : MonoBehaviour
     }
     private void Awake()
     {
-        LoadCharacterData();
+        LoadMonsterData();
         if (instance == null)
         {
             instance = this;
@@ -46,19 +45,15 @@ public class CharJson : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
+    }    
 
-    public Data[] allCharacterData;
-    void LoadCharacterData()
+    public MonsterData[] allMonsterData;
+    void LoadMonsterData()
     {
-        TextAsset textAsset = Resources.Load<TextAsset>("CharacterTable");
-        if (textAsset == null)
-        {
-            Debug.LogError("charactortable.json 파일을 Resources 폴더에서 찾을 수 없습니다!");
-            return;
-        }
+        TextAsset textAsset = Resources.Load<TextAsset>("MonsterTable");
+        if (textAsset == null)  {return;}
         string jsonString = textAsset.text;
-        CharacterDataWrapper dataWrapper = JsonUtility.FromJson<CharacterDataWrapper>(jsonString);
-        allCharacterData = dataWrapper.characters;
+        MonsterDataWrapper monsterdataWrapper = JsonUtility.FromJson<MonsterDataWrapper>(jsonString);
+        allMonsterData = monsterdataWrapper.monster;
     }
 }

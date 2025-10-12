@@ -1,7 +1,7 @@
 {
   "characters": [
     {
-      "id": 1,
+      "id": 1001,
       "en_name": "Cheese_Burger",
       "name": "치즈버거",
       "range": 0,
@@ -12,7 +12,7 @@
       "attackspeed": 1.0
     },
     {
-      "id": 2,
+      "id": 1002,
       "en_name": "Shrimp_Burger",
       "name": "새우버거",
       "range": 1,
@@ -23,7 +23,7 @@
       "attackspeed": 1.2
     },
     {
-      "id": 3,
+      "id": 1003,
       "en_name": "Almond_Burger",
       "name": "아몬드버거",
       "range": 0,
@@ -34,7 +34,7 @@
       "attackspeed": 0.8
     },
     {
-      "id": 4,
+      "id": 1004,
       "en_name": "Burger_Queen",
       "name": "버거퀸와사비",
       "range": 1,
@@ -45,7 +45,7 @@
       "attackspeed": 1.0
     },
     {
-      "id": 5,
+      "id": 1005,
       "en_name": "Avocado_Burger",
       "name": "아보카도버거",
       "range": 1,
@@ -56,7 +56,7 @@
       "attackspeed": 1.0
     },
     {
-      "id": 6,
+      "id": 1006,
       "en_name": "Galaxy_Burger",
       "name": "갤럭시버거",
       "range": 1,

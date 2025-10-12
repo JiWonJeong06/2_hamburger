@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public class Data
+public class BossData
 {
     public int id; //아이디
     public string en_name; //영어 이름
@@ -12,18 +12,20 @@ public class Data
     public int defense; //방어력
     public float speed; //이동속도
     public float attackspeed; //공격속도
+
+    public string dropitem; //얻을 재화
 }
 
 [System.Serializable]
-public class CharacterDataWrapper
+public class BossDataWrapper
 {
-    public Data[] characters;
+    public BossData[] boss;
 }
-public class CharJson : MonoBehaviour
+public class BossJson : MonoBehaviour
 {
-
-    private static CharJson instance = null;
-    public static CharJson Instance
+    
+    private static BossJson instance = null;
+    public static BossJson Instance
     {
         get
         {
@@ -36,7 +38,7 @@ public class CharJson : MonoBehaviour
     }
     private void Awake()
     {
-        LoadCharacterData();
+        LoadBossData();
         if (instance == null)
         {
             instance = this;
@@ -47,18 +49,13 @@ public class CharJson : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-    public Data[] allCharacterData;
-    void LoadCharacterData()
+    public BossData[] allBossData;
+    void LoadBossData()
     {
-        TextAsset textAsset = Resources.Load<TextAsset>("CharacterTable");
-        if (textAsset == null)
-        {
-            Debug.LogError("charactortable.json 파일을 Resources 폴더에서 찾을 수 없습니다!");
-            return;
-        }
+        TextAsset textAsset = Resources.Load<TextAsset>("BossTable");
+        if (textAsset == null)  {return;}
         string jsonString = textAsset.text;
-        CharacterDataWrapper dataWrapper = JsonUtility.FromJson<CharacterDataWrapper>(jsonString);
-        allCharacterData = dataWrapper.characters;
+        BossDataWrapper bossdataWrapper = JsonUtility.FromJson<BossDataWrapper>(jsonString);
+        allBossData = bossdataWrapper.boss;
     }
 }
