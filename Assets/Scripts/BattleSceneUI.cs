@@ -7,7 +7,7 @@ public class BattleSceneUI : MonoBehaviour
     public void Game_Start()
     {
         Debug.Log("전투 시작");
-        BattleManager.Instance.StartBattle();
+
     }
     public void Pause()
     {

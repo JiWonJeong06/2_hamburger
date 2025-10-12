@@ -26,11 +26,5 @@ public class CharacterManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    void Start()
-    {
-        Data[] character = CharJson.Instance.allCharacterData;
 
-        Debug.Log("첫 번째 캐릭터 이름: " + character[0].name);
-
-    }
 }
