@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1290945090976552679}
+  - component: {fileID: -5121017368039344831}
   m_Layer: 0
   m_Name: ShrimpBoss
   m_TagString: Boss
@@ -32,6 +33,28 @@ Transform:
   - {fileID: 2222890366848458768}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5121017368039344831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10306834528007588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728cadc9c51f7374695f07b3d4966ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3001
+  en_name: 
+  name: 
+  range: 0
+  hp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  attackspeed: 0
+  dropitem: 
 --- !u!1 &5819005782924852356
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 80
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5,
     type: 3}
   m_Color: {r: 1, g: 0.4292453, b: 0.4292453, a: 1}

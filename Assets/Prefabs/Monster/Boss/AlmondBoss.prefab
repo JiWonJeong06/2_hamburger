@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 80
   m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5,
     type: 3}
   m_Color: {r: 0.3018868, g: 0.1091718, b: 0, a: 1}
@@ -97,6 +97,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2180882573935063666}
+  - component: {fileID: 230960358202927070}
   m_Layer: 0
   m_Name: AlmondBoss
   m_TagString: Boss
@@ -120,3 +121,25 @@ Transform:
   - {fileID: 7668494741134173899}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230960358202927070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968430459278456923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 728cadc9c51f7374695f07b3d4966ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3002
+  en_name: 
+  name: 
+  range: 0
+  hp: 0
+  attack: 0
+  defense: 0
+  speed: 0
+  attackspeed: 0
+  dropitem: 
