@@ -43,7 +43,7 @@ public class CameraController : MonoBehaviour
         else if (Input.GetMouseButton(0))
         {
             Vector3 delta = Input.mousePosition - lastMousePos;
-            transform.Translate(new Vector3(delta.x, delta.y, 0) * (moveSpeed * Time.deltaTime));
+            transform.Translate(new Vector3(-delta.x, -delta.y, 0) * (moveSpeed * Time.deltaTime));
             lastMousePos = Input.mousePosition;
         }
     }

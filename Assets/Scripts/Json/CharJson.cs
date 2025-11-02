@@ -12,6 +12,7 @@ public class Data
     public int defense; //방어력
     public float speed; //이동속도
     public float attackspeed; //공격속도
+    public string RoleType; //역할군
 }
 
 [System.Serializable]
