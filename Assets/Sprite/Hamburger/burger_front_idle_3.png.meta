@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 14e9bf69534fd2b4f963cfdb75f6044f
+guid: 62959375626309543943d43e608fe90b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 382641404521421904
-    second: Ch_Hamburger_Walk_Front_4frames_0
-  - first:
-      213: 3826120026501496748
-    second: Ch_Hamburger_Walk_Front_4frames_1
-  - first:
-      213: 1601520312457533378
-    second: Ch_Hamburger_Walk_Front_4frames_2
-  - first:
-      213: 4591516770383652761
-    second: Ch_Hamburger_Walk_Front_4frames_3
+      213: -4826602028525632473
+    second: burger_front_idle_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,7 +73,7 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 0
+    resizeAlgorithm: 1
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -122,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ch_Hamburger_Walk_Front_4frames_0
+      name: burger_front_idle_3_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 32
-        height: 32
+        width: 47
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05c1bd0845a6f4500800000000000000
-      internalID: 382641404521421904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ch_Hamburger_Walk_Front_4frames_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: caf31a774eb191530800000000000000
-      internalID: 3826120026501496748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ch_Hamburger_Walk_Front_4frames_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c79a9c2d3eb93610800000000000000
-      internalID: 1601520312457533378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ch_Hamburger_Walk_Front_4frames_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99767fefc2858bf30800000000000000
-      internalID: 4591516770383652761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ch_Hamburger_Walk_Front_4frames_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d84e17925e9688848bf4e2a1eb6763a1
-      internalID: 1407113386
+      spriteID: 724cc890707740db0800000000000000
+      internalID: -4826602028525632473
       vertices: []
       indices: 
       edges: []
@@ -235,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 995cd546a4a955a41aad8cca067fdc31
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -245,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ch_Hamburger_Walk_Front_4frames_0: 382641404521421904
-      Ch_Hamburger_Walk_Front_4frames_1: 3826120026501496748
-      Ch_Hamburger_Walk_Front_4frames_2: 1601520312457533378
-      Ch_Hamburger_Walk_Front_4frames_3: 4591516770383652761
-      Ch_Hamburger_Walk_Front_4frames_4: 1407113386
+      burger_front_idle_3_0: -4826602028525632473
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,6 +7,7 @@ public class CharStat : MonoBehaviour
     public string name; //이름
     public int range; //근, 원거리 
     public float hp; //최대체력
+    public float currentHp; //현재체력
     public float attack; //공격력
     public int defense; //방어력
     public float speed; //이동속도
@@ -29,6 +30,7 @@ public class CharStat : MonoBehaviour
             name = characterData.name;
             range = characterData.range;
             hp = characterData.hp;
+            currentHp = characterData.hp;
             attack = characterData.attack;
             defense = characterData.defense;
             speed = characterData.speed;
