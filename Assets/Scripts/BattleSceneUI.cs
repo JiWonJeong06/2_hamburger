@@ -1,12 +1,22 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleSceneUI : MonoBehaviour
 {
+    public BattleManager battleManager;
+    
+
     [Header("캔버스 UI")]
     public GameObject pauseUI;
     public void Game_Start()
     {
-        Debug.Log("전투 시작");
+        if (battleManager == null)
+        {
+            return;
+        }
+
+        Debug.Log("전투 시작 버튼 클릭됨");
+        battleManager.StartBattle();
 
     }
     public void Pause()

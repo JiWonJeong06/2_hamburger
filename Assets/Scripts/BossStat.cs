@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BossStat : MonoBehaviour
+public class BossStat : MonoBehaviour, ICombatant
 {
     public int id; //아이디
     public string en_name; //영어 이름
@@ -41,5 +41,31 @@ public class BossStat : MonoBehaviour
         {
             Debug.LogError("보스 ID에 해당하는 데이터를 찾을 수 없습니다: " + bossId);
         }
+    }
+
+    // ================= BattleManager 호환 부분 =================
+    public string Name => name;
+    public float HP
+    {
+        get => currentHp;
+        set => currentHp = Mathf.Clamp(value, 0, hp);
+    }
+    public float Attack => attack;
+    public float Defense => defense;
+    public bool IsDead => currentHp <= 0;
+    [SerializeField] private int _range;  // 실제 값 저장
+    public int Range => _range;            // 인터페이스 구현
+
+    public void TakeDamage(float damage)
+    {
+        float finalDamage = Mathf.Max(1, damage * defense*0.01f);
+        currentHp -= finalDamage;
+        currentHp = Mathf.Clamp(currentHp, 0, hp);
+        Debug.Log($"{name}이(가) {finalDamage} 데미지를 입음! 남은 HP: {currentHp}");
+         if (currentHp <= 0)
+    {
+        Debug.Log($"{name} 사망! 씬에서 제거됨.");
+        Destroy(this.gameObject);
+    }
     }
 }

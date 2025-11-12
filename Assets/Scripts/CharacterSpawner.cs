@@ -13,7 +13,7 @@ public class CharacterSpawner : MonoBehaviour, IPointerClickHandler
     {
         if (previewObject == null) return;
 
-        // 마우스 위치 계산
+        // 마우스 위치 계산 (2D용 z는 10으로 임시)
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = 10f;
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -45,6 +45,13 @@ public class CharacterSpawner : MonoBehaviour, IPointerClickHandler
 
         previewObject = Instantiate(prefabToSpawn);
         SetPreviewTransparency(0.5f);
+
+        // 프리뷰 중에는 Collider2D 꺼두기
+        Collider2D[] cols = previewObject.GetComponentsInChildren<Collider2D>();
+        foreach (var c in cols)
+        {
+            c.enabled = false;
+        }
     }
 
     private void DetectSquareUnderMouse()
@@ -80,6 +87,13 @@ public class CharacterSpawner : MonoBehaviour, IPointerClickHandler
         // Square 중앙에 프리팹 배치
         GameObject placed = Instantiate(prefabToSpawn, currentSquare.transform.position, Quaternion.identity);
         currentSquare.PlaceObject(placed);
+
+        // ✅ 배치가 끝났으니 Collider2D 다시 켜기
+        Collider2D[] cols = placed.GetComponentsInChildren<Collider2D>();
+        foreach (var c in cols)
+        {
+            c.enabled = true;
+        }
 
         Destroy(previewObject);
         previewObject = null;

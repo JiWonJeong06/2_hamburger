@@ -8,7 +8,7 @@
       "hp": 1200,
       "attack": 45,
       "defense": 20,
-      "speed": 0.9,
+      "speed": 3,
       "attackspeed": 1.0,
       "dropitem" : "Shrimp"
     },
@@ -20,7 +20,7 @@
       "hp": 1600,
       "attack": 40,
       "defense": 35,
-      "speed": 0.8,
+      "speed": 4,
       "attackspeed": 0.8,
       "dropitem" : "Almond"
       
@@ -33,7 +33,7 @@
       "hp": 1500,
       "attack": 55,
       "defense": 25,
-      "speed": 1.0,
+      "speed": 5,
       "attackspeed": 1.0,
       "dropitem" : "Wasabi"
     },
@@ -45,7 +45,7 @@
       "hp": 2000,
       "attack": 50,
       "defense": 40,
-      "speed": 0.9,
+      "speed": 4,
       "attackspeed": 0.9,
       "dropitem" : "Avocado"
     }
