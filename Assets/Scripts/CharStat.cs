@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class CharStat : MonoBehaviour, ICombatant
 {
+    public enum PlayerState
+    {
+        Idle,
+        Walk,
+        Fight
+    }
+    public PlayerState currentState;
+    Animator animator;
     public int id; //아이디
     public string en_name; //영어 이름
     public string name; //이름
@@ -17,7 +25,17 @@ public class CharStat : MonoBehaviour, ICombatant
     void Start()
     {
         LoadCharStat(id);
+        animator = GetComponent<Animator>();
+        ChangeState(PlayerState.Idle);
     }
+    public void ChangeState(PlayerState newState)
+{
+    if (currentState == newState) return;
+        currentState = newState;
+     if (animator == null) return; // 안전장치
+
+    animator.SetInteger("state", (int)newState);
+}
 
     void LoadCharStat(int charId)
     {
@@ -61,6 +79,7 @@ public class CharStat : MonoBehaviour, ICombatant
         currentHp -= finalDamage;
         currentHp = Mathf.Clamp(currentHp, 0, hp);
         Debug.Log($"{name}이(가) {finalDamage} 데미지를 입음! 남은 HP: {currentHp}");
+        ChangeState(PlayerState.Fight);
         if (currentHp <= 0)
     {
         Debug.Log($"{name} 사망! 씬에서 제거됨.");
