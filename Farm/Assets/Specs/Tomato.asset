@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9367899b6dbff774298308fdb739ba50, type: 3}
+  m_Name: Tomato
+  m_EditorClassIdentifier: 
+  cropId: Tomato
+  displayName: "\uD1A0\uB9C8\uD1A0"
+  stageSprites:
+  - {fileID: -7909119176651156597, guid: f122ad5bc42fec94c88ab610c3afe8e7, type: 3}
+  - {fileID: -3571453731875283761, guid: bf5e7b080295f964ab1adab05b56e516, type: 3}
+  - {fileID: -6701165621028275949, guid: eea2314bc76e92a49ba5636a774c1158, type: 3}
+  baseGrowTimePerStage: 30
+  harvestAmountByLevel: 0400000006000000080000000a0000000c000000
+  upgradeCostByLevel: 00000000b4000000fa0000004001000090010000
+  readyParticlePrefab: {fileID: 7071835731214444519, guid: 74dd05b5cd8c03a4a9397b880a1d49a2, type: 3}
