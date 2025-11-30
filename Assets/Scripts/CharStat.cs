@@ -75,11 +75,11 @@ public class CharStat : MonoBehaviour, ICombatant
 
     public void TakeDamage(float damage)
     {
-        float finalDamage = Mathf.Max(1, damage * defense*0.01f);
+        float finalDamage = Mathf.Max(1, damage);
         currentHp -= finalDamage;
         currentHp = Mathf.Clamp(currentHp, 0, hp);
         Debug.Log($"{name}이(가) {finalDamage} 데미지를 입음! 남은 HP: {currentHp}");
-        ChangeState(PlayerState.Fight);
+       
         if (currentHp <= 0)
     {
         Debug.Log($"{name} 사망! 씬에서 제거됨.");

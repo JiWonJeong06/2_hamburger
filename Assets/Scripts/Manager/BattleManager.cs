@@ -37,7 +37,7 @@ public class BattleManager : MonoBehaviour
             if (combatant != null) allies.Add(combatant);
         }
 
-        foreach (var e in GameObject.FindGameObjectsWithTag("Enemy"))
+        foreach (var e in GameObject.FindGameObjectsWithTag("Boss"))
         {
             var combatant = e.GetComponent<ICombatant>();
             if (combatant != null) enemies.Add(combatant);
