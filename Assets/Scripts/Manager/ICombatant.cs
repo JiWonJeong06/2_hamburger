@@ -8,4 +8,5 @@ public interface ICombatant
     int Range { get; }         // 공격 범위
 
     void TakeDamage(float damage); // 피해 받는 함수
+     void DealDamage(ICombatant target);
 }

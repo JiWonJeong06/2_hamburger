@@ -2,14 +2,6 @@ using UnityEngine;
 
 public class CharStat : MonoBehaviour, ICombatant
 {
-    public enum PlayerState
-    {
-        Idle,
-        Walk,
-        Fight
-    }
-    public PlayerState currentState;
-    Animator animator;
     public int id; //아이디
     public string en_name; //영어 이름
     public string name; //이름
@@ -22,20 +14,12 @@ public class CharStat : MonoBehaviour, ICombatant
     public float attackspeed; //공격속도
     public string RoleType; //역할군
 
+    [SerializeField] private Animator animator; // 애니메이터
+
     void Start()
     {
         LoadCharStat(id);
-        animator = GetComponent<Animator>();
-        ChangeState(PlayerState.Idle);
     }
-    public void ChangeState(PlayerState newState)
-{
-    if (currentState == newState) return;
-        currentState = newState;
-     if (animator == null) return; // 안전장치
-
-    animator.SetInteger("state", (int)newState);
-}
 
     void LoadCharStat(int charId)
     {
@@ -46,7 +30,7 @@ public class CharStat : MonoBehaviour, ICombatant
         {
             en_name = characterData.en_name;
             name = characterData.name;
-            _range = characterData.range; // ★ 여기
+            _range = characterData.range;
             hp = characterData.hp;
             currentHp = characterData.hp;
             attack = characterData.attack;
@@ -71,19 +55,49 @@ public class CharStat : MonoBehaviour, ICombatant
     public float Attack => attack;
     public float Defense => defense;
     public bool IsDead => currentHp <= 0;
-    public int Range => _range; // ★ 인터페이스 구현
+    public int Range => _range;
+
+    // ---------------- 공격 처리 ----------------
+    public void DealDamage(ICombatant target)
+    {
+
+
+        // 공격 애니메이션 실행
+        PlayAttackAnimation();
+
+        // 즉시 데미지 적용
+        target.TakeDamage(attack);
+
+        Debug.Log($"{Name} ▶ {target.Name} 공격! 데미지: {attack}");
+    }
 
     public void TakeDamage(float damage)
+    
     {
-        float finalDamage = Mathf.Max(1, damage);
+
+        
+        float finalDamage = Mathf.Max(1, damage - defense);
         currentHp -= finalDamage;
         currentHp = Mathf.Clamp(currentHp, 0, hp);
+
         Debug.Log($"{name}이(가) {finalDamage} 데미지를 입음! 남은 HP: {currentHp}");
-       
+
         if (currentHp <= 0)
+        {
+            Debug.Log($"{name} 사망! 씬에서 제거됨.");
+            Destroy(gameObject);
+        }
+    }
+
+    // ================= 애니메이션 제어 =================
+    public void PlayAttackAnimation()
     {
-        Debug.Log($"{name} 사망! 씬에서 제거됨.");
-        Destroy(this.gameObject);
+        if (animator == null) return;
+
+        animator.SetBool("IsAttacking", true);
+
+  
     }
-    }
+
+
 }

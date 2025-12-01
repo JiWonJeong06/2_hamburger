@@ -8,6 +8,7 @@ public class BattleSceneUI : MonoBehaviour
 
     [Header("캔버스 UI")]
     public GameObject pauseUI;
+    public GameObject squareUI;
     public void Game_Start()
     {
         if (battleManager == null)
@@ -17,6 +18,7 @@ public class BattleSceneUI : MonoBehaviour
 
         Debug.Log("전투 시작 버튼 클릭됨");
         battleManager.StartBattle();
+        squareUI.SetActive(false);
 
     }
     public void Pause()
@@ -41,6 +43,7 @@ public class BattleSceneUI : MonoBehaviour
     }
     public void Quit_Game()
     {
+        Time.timeScale = 1f;
         Debug.Log("나가기");
     }
 

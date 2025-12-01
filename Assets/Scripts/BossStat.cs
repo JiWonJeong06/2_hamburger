@@ -55,6 +55,17 @@ public class BossStat : MonoBehaviour, ICombatant
     public bool IsDead => currentHp <= 0;
     [SerializeField] private int _range;  // 실제 값 저장
     public int Range => _range;            // 인터페이스 구현
+    public void DealDamage(ICombatant target)
+    {
+        if (target == null || target.IsDead) return;
+
+   
+
+        // 즉시 데미지 적용
+        target.TakeDamage(attack);
+
+        Debug.Log($"{Name} ▶ {target.Name} 공격!uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu 데미지: {attack}");
+    }
 
     public void TakeDamage(float damage)
     {

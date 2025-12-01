@@ -10,6 +10,8 @@ public class BattleManager : MonoBehaviour
     private bool isBattleRunning = false;
     public Text vicloseText;
 
+    
+
     [Header("전투 설정")]
     public float turnInterval = 0.5f;    // 턴 간격 (공격만)
     public float meleeAttackRange = 1f;   // 근접 공격 범위
@@ -162,6 +164,7 @@ public class BattleManager : MonoBehaviour
     private void MeleeAttack(ICombatant melee, List<ICombatant> targets)
     {
         var obj = (melee as MonoBehaviour)?.gameObject;
+   
         if (obj == null) return;
 
         // 가까운 적 체크
@@ -180,6 +183,7 @@ public class BattleManager : MonoBehaviour
         if (target != null)
         {
             target.TakeDamage(melee.Attack);
+            
             Debug.Log($"{melee.Name} ▶ {target.Name} 근접 공격! 데미지: {melee.Attack}");
         }
     }
@@ -188,9 +192,11 @@ public class BattleManager : MonoBehaviour
     private void RangedAttack(ICombatant ranged, List<ICombatant> targets)
     {
         var target = GetClosestAlive(ranged, targets);
+        
         if (target != null)
         {
             target.TakeDamage(ranged.Attack);
+           
             Debug.Log($"{ranged.Name} ▶ {target.Name} 원거리 공격! 데미지: {ranged.Attack}");
         }
     }

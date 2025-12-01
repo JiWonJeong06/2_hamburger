@@ -12602,6 +12602,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342529412}
   m_CullTransparentMesh: 1
+--- !u!1 &346360133 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5568754509530403627, guid: 2b875c9091130fd42b19faa5da3cf844, type: 3}
+  m_PrefabInstance: {fileID: 214352049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &500617898
 GameObject:
   m_ObjectHideFlags: 0
@@ -13488,6 +13493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   battleManager: {fileID: 583545072}
   pauseUI: {fileID: 586321234}
+  squareUI: {fileID: 346360133}
 --- !u!4 &809929278
 Transform:
   m_ObjectHideFlags: 0
@@ -14591,10 +14597,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3098593684769544565, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3098593684769544565, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_Size.x
+      value: 5.4740705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_Size.y
+      value: 4.142521
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.1659827
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.62883
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 8.975
+      objectReference: {fileID: 0}
+    - target: {fileID: 5200665449233527045, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 9.975
+      objectReference: {fileID: 0}
     - target: {fileID: 7184427286011878103, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
       propertyPath: m_Name
       value: ShrimpBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 8909982741316370195, guid: 60f89cca916262f44a80192a33104b1d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa1c5287b4b7aed49b96619719e9b135, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15521,8 +15563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 20}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 108, y: 25.499996}
+  m_SizeDelta: {x: 312.08, y: 109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757636929
 MonoBehaviour:
@@ -15544,7 +15586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1027673670922091306, guid: d2b463e46d6c0be4293d9a53cb5c7ac2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2b463e46d6c0be4293d9a53cb5c7ac2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16252,8 +16294,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 113.85, y: 15}
+  m_SizeDelta: {x: 327.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2077692890
 MonoBehaviour:
@@ -16275,7 +16317,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2111898321969795410, guid: 58daa808142dc554885bb71af406c8e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58daa808142dc554885bb71af406c8e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

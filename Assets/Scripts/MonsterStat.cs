@@ -55,6 +55,17 @@ public class MonsterStat : MonoBehaviour, ICombatant
 
     // 인터페이스 Range 구현
     public int Range => _range; // 자기 자신을 참조하지 않음 → StackOverflow 해결
+    public void DealDamage(ICombatant target)
+    {
+        if (target == null || target.IsDead) return;
+        Debug.Log($"{Name} ▶ {target.Name} 공격!uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu 데미지: {attack}");
+
+   
+
+        // 즉시 데미지 적용
+        target.TakeDamage(attack);
+
+    }
 
     public void TakeDamage(float damage)
     {
